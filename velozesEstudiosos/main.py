@@ -176,12 +176,12 @@ while jogo_ativo:
         contador_obstaculo += 1
         contador_rodadas_coracao += 1
     
-        if contador_obstaculo == 3 and obstaculo_velocidade < 10:
+        if contador_obstaculo == 10 and obstaculo_velocidade < 10:
             obstaculo_velocidade += 1
             contador_obstaculo = 0
             exibir_mensagem_velocidade(obstaculo_velocidade)
         
-    if contador_rodadas_coracao % 5 == 0:
+    if contador_rodadas_coracao % 15 == 0:
         coracao_y= -altura_tela
         coracao_x = random.randrange(0, largura_tela - coracao_largura)
 
